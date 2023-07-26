@@ -1,10 +1,17 @@
 import React from 'react';
-import Login from './Login';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './login';
+import SecondPage from './secondPage';
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/second-page" element={<SecondPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

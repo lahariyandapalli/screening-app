@@ -11,3 +11,14 @@ body, html {
     height: 100vh;
   }
   
+  .login-card {
+    max-width: 330px; /* Adjust the width as per your requirement */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color:white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add additional styles for input fields, buttons, etc. if needed */
+  
