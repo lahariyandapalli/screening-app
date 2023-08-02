@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import './uploadfiles.css';
+import { Container,Button } from 'react-bootstrap';
 
 function UploadFiles() {
   const [file, setFile] = useState(null);
@@ -25,25 +26,51 @@ function UploadFiles() {
   };
 
   return (
-    <div className="upload-container">
-      <h3>Menu 1 - Upload Files</h3>
-      <form onSubmit={handleSubmit}>
-        <div className="upload-inputs">
-          <Form.Group controlId="formFile" className="mb-3">
-            <Form.Control type="file" id="fileInput" onChange={handleFileChange} />
-          </Form.Group>
+    <Container>
+    <div className='menu1'>
+     <h4>MENU-1 UPLOAD FILES</h4>
+     <form onSubmit={handleSubmit}>
+     <Form.Group controlId="formFile" className="mb-3">
+        <Form.Label></Form.Label>
+        <Form.Control type="file" />
+      </Form.Group>
+      {['checkbox'].map((type) => (
+        <div key={`default-${type}`} className="mb-3">
+          <Form.Check // prettier-ignore
+            type={type}
+            id={`default-${type}`}
+            label="Domestic Watch List"
+          />
         </div>
-        <div className="upload-inputs">
-          <label>
-            Domestic Watch List:
-            <input type="checkbox" checked={isDomestic} onChange={handleCheckboxChange} />
-          </label>
-        </div>
-        <div className="upload-button-container"> {/* New container to center the button */}
-          <button type="submit" className="upload-button">Submit</button>
-        </div>
-      </form>
+      ))}
+      <Button variant="primary">Submit</Button>
+     </form>
     </div>
+    </Container>
+    
+    // <div className="upload-container" >
+      
+    //   <form onSubmit={handleSubmit}>
+    //     <div className="upload-inputs">
+    //       <Form.Group controlId="formFile" className="mb-3">
+    //         <Form.Control type="file" id="fileInput" onChange={handleFileChange} />
+    //       </Form.Group>
+    //     </div>
+    //     <Form.Group className="mb-3" controlId="formBasicCheckbox">
+    //     <Form.Check label=" Domestic Watch List" type="checkbox"  />
+    //   </Form.Group>
+    //     {/* <div className="upload-inputs">
+    //       <label>
+    //         Domestic Watch List:
+    //         <input type="checkbox" checked={isDomestic} onChange={handleCheckboxChange} />
+    //       </label>
+    //     </div> */}
+    //     <div className="upload-button-container"> {/* New container to center the button */}
+    //       <button type="submit" className="upload-button">Submit</button>
+    //     </div>
+    //   </form>
+    // </div>
+  
   );
 }
 

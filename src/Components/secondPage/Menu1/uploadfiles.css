@@ -14,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px; /* Reduced margin-top to create less gap */
+  padding: 10%;
 }
 
 .upload-inputs label {
@@ -48,4 +49,21 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.menu1{
+  max-width: 500px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2%;
+  background-color:rgb(33,37,41);
+  color: whitesmoke;
+  border-radius: 20px;
+}
+.menu1 h4{
+  text-align: center;
+  text-decoration: underline;
+  font-weight:lighter;
 }
