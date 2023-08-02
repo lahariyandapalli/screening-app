@@ -1,0 +1,40 @@
+/* Styles for Menu 3 (SearchMenu2) */
+.search-menu2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-menu2-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-menu2-inputs label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduced margin-bottom to create a gap between label and input */
+}
+
+.search-menu2-inputs input[type="text"] {
+  margin-bottom: 10px; /* Increased margin-bottom to create more gap between input boxes */
+}
+
+.search-menu2-button {
+  padding: 8px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-menu2-button:hover {
+  background-color: #555;
+}
+
+.search-menu2-button:active {
+  background-color: #222;
+}

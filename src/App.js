@@ -1,18 +1,19 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './login';
-import SecondPage from './secondPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './Components/loginPage/login';
+import SecondPage from './Components/secondPage/secondPage';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <BrowserRouter>
+      <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/second-page" element={<SecondPage />} />
+          <Route path="/secondpage" element={<SecondPage />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

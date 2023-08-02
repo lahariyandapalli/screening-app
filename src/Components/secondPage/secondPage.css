@@ -1,0 +1,163 @@
+/* Global styles */
+body {
+  background-color: white;
+}
+
+/* Styles for Tabs */
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab-button {
+  padding: 10px 12px; /* Reduced the padding to make the tabs narrower */
+  margin: 0 5px; /* Reduced the margin between tabs */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  width: 100px; /* Set a fixed width for the tabs */
+}
+
+.tab-button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Styles for Menu 1 (UploadFiles) */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.upload-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.upload-inputs label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.upload-inputs input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.upload-button {
+  padding: 8px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #555;
+}
+
+.upload-button:active {
+  background-color: #222;
+}
+
+/* Styles for Menu 2 (SearchMenu1) */
+.search-menu1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-menu1-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-menu1-inputs label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.search-menu1-inputs input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.search-menu1-button {
+  padding: 8px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-menu1-button:hover {
+  background-color: #555;
+}
+
+.search-menu1-button:active {
+  background-color: #222;
+}
+
+/* Styles for Menu 3 (SearchMenu2) */
+.search-menu2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-menu2-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-menu2-inputs label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.search-menu2-inputs input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.search-menu2-button {
+  padding: 8px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-menu2-button:hover {
+  background-color: #555;
+}
+
+.search-menu2-button:active {
+  background-color: #222;
+}
+
+/* Add styles for the violet background */
+.container-fluid.violet-background {
+  background-color: white !important; /* Set the entire container background to white */
+}
